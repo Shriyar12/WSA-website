@@ -1,0 +1,536 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.parallax{
+  background: url("images/ngo_img19.png")
+  repeat fixed 100% ;
+  opacity: 80%;
+  
+}
+.parallax-inner{
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+.logo img {
+  height: 90px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+ul li ul li{
+  font-size: 10px;
+  font-weight: 10;
+  width: 100%;
+}
+nav {
+  background-color: orange;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.menu li.dropdown {
+  position: relative;
+}
+
+ul.menu li.dropdown:hover .submenu {
+  display: block;
+}
+
+ul.menu li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: orange;
+  z-index: 999;
+}
+.submenu{
+  width: 300px;
+}
+.submenu-dropdown {
+  display: none;
+  background-color: orange;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.menu li:hover .submenu-dropdown {
+  display: block;
+}
+
+.submenu-dropdown a {
+  display: block;
+  color: navy;
+}
+
+.submenu-dropdown a:hover {
+  opacity: 20%;
+}
+.menu li:hover .submenu-dropdown {
+  display: block;
+}
+
+nav a {
+  color: navy;
+}
+
+ul li a:hover {
+  background-color: white;
+  padding: 12px;
+  border-radius: 20px;
+  color: navy;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  padding: 15px 30px;
+  font-size: 25px;
+}
+
+.toggle {
+  font-size: 30px;
+  display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+  .menu.active,
+  .toggle {
+    display: block;
+  }
+  .toggle {
+    position: absolute;
+    margin-top: 25px;
+    top: 15px;
+    right: 20px;
+  }
+}
+
+.container .content {
+  position: relative;
+  height: 8vh;
+}
+
+.container .content .info {
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  right: 20px;
+  width: 500px;
+  text-align: justify;
+  color: navy;
+}
+
+.container .content .info h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#q2 {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 4px;
+}
+
+.container .content .info button {
+  height: 45px;
+  width: 150px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background: orange;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.container .content .info button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.container .content .info button a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .content .image > img {
+  margin-top: 25px;
+  height: 590px;
+  width: 600px;
+  float: right;
+}
+
+@media screen and (max-width: 700px) {
+  .container .content .info {
+    text-align: start;
+  }
+
+  .container .content .image > img {
+    opacity: 20%;
+  }
+}
+
+.container2{
+  margin-top: 580px;
+  background-color: white;
+}
+#abt{
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: orange;
+}
+#founder{
+  float: left;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 45px;
+}
+.abtfull{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: navy;
+  padding: 30px;
+}
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: green;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2{
+  font-size: 3em;
+  color: white;
+  font-weight: 500; 
+  text-align: center;
+}
+.container3{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 30px;
+}
+.container3 .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.container3 .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  cursor: pointer;
+}
+.container3 .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75em;
+  transition: .5s;
+}
+.container3 .contactInfo .box:hover .icon{
+  background: white;
+  color: black;
+  border-radius: 200px;
+}
+
+.container3 .contactInfo .box .text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container3 .contactInfo .box .text h3{
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
+}
+.container3 .contactInfo .box .text p{
+  color: whitesmoke;
+  opacity: 90%;
+  font-size: 1.3em;
+}
+.container3 .contactInfo .txt{
+  color: white;
+  margin-top: 5px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 50px solid orange;
+  line-height: 1em;
+}
+.sci{
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+.sci li{
+  list-style: none;
+}
+.sci li a{
+  color: white;
+  font-size: 2em;
+  transition: 0.5s;
+}
+.sci li a :hover{
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+}
+.container3 .contactform{
+  position: relative;
+  width: 30%;
+  background-color: white;
+  min-height: 100px;
+  padding: 60px;
+}
+.container3 .contactform h2{
+  font-size: 2em;
+  color: navy;
+  font-weight: 500;
+}
+.container3 .contactform .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.container3 .contactform .inputBox input{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid navy;
+  outline: none;
+  resize: none;
+}
+.container3 .contactform .inputBox span{
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 5px 0;
+  margin: 10px 0;
+  color: navy;
+  opacity: 90%;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+.container3 .contactform .inputBox input:focus ~ span, 
+.container3 .contactform .inputBox input:valid ~ span{
+  color: rgb(253, 94, 121);
+  font-size: 0.9em;
+  transform: translateY(-20px);
+}
+.container3 .contactform .inputBox input[type="submit"]{
+  width: 100px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.container3 .contactform .inputBox input[type="submit"]:hover{
+  background-color: rgb(1, 87, 1);
+}
+@media (max-width: 991px){
+  .contact{
+    padding: 50px;
+  }
+  .container3{
+    flex-direction: column;
+  }
+  .container3 .contactInfo,
+  .container3 .contactform{
+    width: 100%;
+  }
+  .container3 .contactform{
+    padding: 50px 30px;
+  }
+}
+.servicetitle{
+  text-align: center;
+  color: navy;
+  padding: 55px;
+}
+.number{
+  justify-content: center;
+}
+.number td{
+  padding: 10px 150px;
+  font-size: 1.5em;
+}
+.number td{
+  color: orange;
+  font-style: bold;
+}
+.number td h3{
+  color: rgb(77, 73, 73) ;
+  padding-bottom: 50px;
+}
+.servicecont p{
+  color: rgb(45, 42, 42) ;
+  font-size: 1.5em;
+  margin: 40px;
+}
+.servicecont ul li{
+  list-style: circle;
+  font-size: 1.5em;
+  color: rgb(45, 42, 42) ;
+  margin-left: 60px;
+}
+
+.servicecont h4{
+  font-size: 1.6em;
+  margin-left: 60px;
+}
+
+.container4{
+  width: 100%;
+  height: 100%;
+  padding: 0 8%;
+}
+.container4 h1{
+  text-align: center;
+  padding-top: 7%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+.container4 h1::after{
+  content: '';
+  background: orange;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  margin-top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 30px;
+}
+.service{
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+}
+.service img{
+  margin-bottom: 10px;
+}
+.service h2{
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#do1{
+  color: navy;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: bold;
+  text-align: center;
+}
+#do2{
+  color: navy;
+  font-size: 1.3em;
+  margin: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.dele1{
+  border: solid 2px grey;
+  border-radius: 25px;
+  
+}
+#pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+#paynow{
+  height: 75px;
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background: rgb(87, 125, 87);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+#paynow a{
+  color: white;
+  font-size: 2em;
+}
+.contactform1{
+  margin: 100px;
+}
+.contactform1 .inputBox input:focus ~ span, 
+.contactform1 .inputBox input:valid ~ span{
+  color: rgb(253, 94, 121);
+  font-size: 0.9em;
+  transform: translateY(-20px);
+}
+.contactform h2{
+  font-size: 2em;
+  color: navy;
+  font-weight: 500;
+}
